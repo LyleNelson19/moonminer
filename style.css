@@ -1,0 +1,40 @@
+body{
+background-image: url('https://t4.ftcdn.net/jpg/02/89/72/69/360_F_289726988_cF9wzIATeSAOBxCg23NqnLeaKVfXWvdy.jpg');
+}
+#stats{
+color:rgb(255, 238, 0);
+
+}
+#moon{
+height:400px;
+width: 500px;
+}
+#store{
+height:80px;
+background-color: wheat;
+
+}
+#storetitle{
+    
+/* height:80px; */
+background-color: wheat;
+
+;
+}
+#knife{
+/* height:80px; */
+background-color: wheat;
+
+}
+#pickaxe{
+/* height:80px; */
+background-color: wheat;
+}
+#mousetronaut{
+/* height:80px; */
+background-color: wheat;
+}
+#rover{
+/* height:80px; */
+background-color: wheat;
+}
