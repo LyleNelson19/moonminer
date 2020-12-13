@@ -3,38 +3,41 @@ background-image: url('https://t4.ftcdn.net/jpg/02/89/72/69/360_F_289726988_cF9w
 }
 #stats{
 color:rgb(255, 238, 0);
-
+}
+#middlecol{
+align-items: flex-end;
 }
 #moon{
 height:400px;
 width: 500px;
+position: relative;
+top: 300px;
 }
 #store{
 height:80px;
-background-color: wheat;
+background-color:rgb(0, 217, 255);
 
 }
-#storetitle{
+/* #storetitle{
     
-/* height:80px; */
-background-color: wheat;
+height:80px;
+background-color: rgb(0, 217, 255);
+} */
 
-;
-}
 #knife{
-/* height:80px; */
-background-color: wheat;
+height:80px;
+background-color: rgb(0, 217, 255);
 
 }
 #pickaxe{
-/* height:80px; */
-background-color: wheat;
+height:80px;
+background-color: rgb(0, 217, 255);
 }
 #mousetronaut{
-/* height:80px; */
-background-color: wheat;
+height:80px;
+background-color: rgb(0, 217, 255);
 }
 #rover{
-/* height:80px; */
-background-color: wheat;
+height:80px;
+background-color: rgb(0, 217, 255);
 }
