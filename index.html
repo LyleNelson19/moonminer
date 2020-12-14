@@ -4,20 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Miner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><script src="https://kit.fontawesome.com/d617e0ea0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
  </header>
     <main class="background">
         <div class="row">
-            <div class="col-4" id="leftcol">
+            <div class="col-4 align-items-flex-end" id="leftcol">
                 <div class="text ml-5 mt-5" id="stats"><h1>Cheese Count: 0</h1></div>   
-                        <div class="row ml-5 mr-5 mt-5" id="store"><h1>Store</h1></div>
-                        <div class="row ml-5 mr-5" id="knife"><h3>Knife = -50</h3></div>
-                        <div class="row ml-5 mr-5" id="pickaxe"><h3>Pickaxe = -100</h3></div>
-                        <div class="row ml-5 mr-5" id="mousetronaut"><h3>Mousetronaut = -250</h3></div>
-                        <div class="row ml-5 mr-5" id="rover"><h3>Rover = -500</h3></div>
+                        <div class="row ml-5 mr-5 mt-5" id="store">
+                            <div class="text ml-5"><h1>Store</h1></div>
+                        </div>
+                        <div class="row ml-5 mr-5" id="kniferow">
+                            <div class="text ml-5" id="knife"><h3>Knife = -50</h3></div>
+                            <button onclick="buyKnife()">Buy</button>
+                            <div class="text ml-4"><h5>Rate +1</h5></div>
+                        </div>
+                        <div class="row ml-5 mr-5" id="pickaxerow">
+                            <div class="text ml-5" id="pickaxe"><h3>Pickaxe = -100</h3></div>
+                            <button onclick="buyPickaxe()">Buy</button>
+                            <div class="text ml-4"><h5>Rate +3</h5></div>
+                        </div>
+                        <div class="row ml-5 mr-5" id="mousetronautrow">
+                            <h1><i class="fas fa-user-astronaut ml-3"></i></h1>
+                            <div class="text ml-3" id="mousetronaut"><h3>Mousetronaut = -250</h3></div>
+                            <button onclick="buyMousetronaut()" id=>Buy</button>
+                            <div class="text ml-4"><h5>Auto +5</h5></div>
+                        </div>
+                        <div class="row ml-5 mr-5" id="graterrow">
+                            <h1><i class="fas fa-greater-than ml-3"></i></h1>
+                            <div class="text ml-3" id="grater"><h3>Grater = -500</h3></div>
+                            <button onclick="buyGrater()"id="buygrater">Buy</button>
+                            <div class= "text ml-4"><h5>Auto +10</h5></div>
+                        </div>
             </div>
             <div class="col-4" id="middlecol">
                 <img src="https://scitechdaily.com/images/Lunar-Reconnaissance-Orbiter-Moon-scaled.jpg" 
@@ -26,7 +46,21 @@
                 onclick="mine()">
             </div>
             <div class="col-4"id="rightcol">
-
+                <div class="row ml-5 mt-5 mr-5 justify-content-center"id="inventoryrow">
+                    <div class="text" id="inventory"><h1>Inventory</h1></div>
+                </div>
+                <div class="row ml-5 mr-5 justify-content-center" id=knifecountrow>
+                    <div class="text" id="knifecount"><h3>Knives: 0</h3></div>
+                </div>
+                <div class="row ml-5 mr-5 justify-content-center" id="pickaxecountrow">
+                    <div class="text" id=pickaxecount><h3>Pickaxes: 0</h3></div>
+                </div>
+                <div class="row ml-5 mr-5 justify-content-center" id="mousetronautcountrow">
+                    <div class="text" id="mousetronautcount"><h3>Mousetronauts: 0</h3></div>
+                </div>
+                <div class="row ml-5 mr-5 justify-content-center" id="gratercountrow">
+                    <div><h3 class="text"id="gratercount">Graters: 0</h3></div>
+                </div>
             </div>
         </div>
         
